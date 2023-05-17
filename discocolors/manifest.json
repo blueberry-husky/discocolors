@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Discocolors",
+  "version": "1.0",
+  "description": "Adds color support to discord!!! formats: {red-green}red to green gradiant!{}[red]red text![]",
+  "permissions": [
+    "activeTab",
+    "https://discord.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://discord.com/*"
+      ],
+      "js": [
+        "colors.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
